@@ -58,13 +58,13 @@ public class MainActivity extends AppCompatActivity {
         returns.setLayoutManager(new LinearLayoutManager(this));
 
         bttAdd.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+            @Override     public void onClick(View v) {
                 String todoItem = edItem.getText().toString();
                 items.add(todoItem);
                 itemsAdapter.notifyItemInserted(items.size() - 1);
                 edItem.setText("");
                 Toast.makeText(getApplicationContext(), "Item was added", Toast.LENGTH_SHORT).show();
+
 
 
             }

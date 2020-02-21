@@ -13,33 +13,30 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="12dp"
+        android:layout_marginEnd="0dp"
         android:text="Add" />
 
     <EditText
         android:id="@+id/edItem"
-        android:layout_width="wrap_content"
-        android:layout_height="58dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="1034dp"
-        android:layout_marginEnd="-5dp"
-        android:layout_marginBottom="-4dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
         android:layout_toStartOf="@+id/bttAdd"
         android:ems="10"
-        android:hint="Add an item here "
-        android:inputType="textPersonName" />
+        android:hint="Add an item here " />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/returns"
-        android:layout_width="660dp"
-        android:layout_height="1029dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/edItem"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
         android:layout_marginStart="0dp"
         android:layout_marginTop="0dp"
-        android:layout_marginEnd="3dp" />
+        android:layout_marginBottom="0dp" />
 </RelativeLayout>
